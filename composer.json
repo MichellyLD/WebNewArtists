@@ -1,0 +1,16 @@
+{
+    "name": "ifba/newartists",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Newartists\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Michelly",
+            "email": "michellylimad1@gmail.com"
+        }
+    ],
+    "require": {}
+}

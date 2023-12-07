@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Playpen Sans', cursive;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+
+/*---------------Header---------------------*/
+header{
+    background-image: linear-gradient(to top left,#BE95C4,#5E548E);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.3rem;
+    justify-content: space-between;
+    padding-left: 1rem;
+}
+header ul{
+    display: flex;
+    list-style: none;
+}
+#opcoes a{
+    color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 50rem;
+    font-size: 1.01rem;
+}
+#opcoes a:hover {
+    background-color: #665be0;
+    color: #cac5f1;
+    transition: all .3s;
+}
+header li{
+    margin: 1rem;
+    white-space: nowrap;
+}
+#logo{
+    height: 3rem;
+    padding-right: 2rem;
+}
+
+.buscar{
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+.buscar input[type=search]{
+    width: 15rem;
+    height: 2rem;
+    border-radius: 2rem;
+    border: none;
+    padding: 0.5rem;
+}
+.buscar img{
+    background-color: #d9e9f800;
+    float: right;
+    border: none;
+    cursor: pointer;
+    width: 1.8rem;
+}
+
+/*---------------Lateral---------------------*/
+#lateral img{
+    margin-left: 0.5rem;
+    width: 2rem;
+    position: absolute;
+}
+input[type="checkbox"]{
+    display: none;
+}
+#lateral nav{
+    background-color:#cdd1f9;
+    width: 15rem;
+    left: -15rem;
+    height: 50rem;
+    position: absolute;
+    transition: all .5s;
+    opacity: 0.9;
+    border-radius: 0rem 1rem 1rem 0rem;
+}
+
+input[type="checkbox"]:checked ~ nav{
+    transform: translateX(15rem);
+}
+#lateral ul{
+    list-style: none;
+    top: 3rem;
+    position: absolute;
+    width: 100%;
+}
+#lateral a{
+    display: block;
+    padding: 2.5rem 1rem;
+    color:#513fd4;
+}
+#lateral a:hover{
+    background-color: #B3C4F2;
+    color:#1a4996;
+    transition: all .3s;
+}
+#label1{
+    padding: 0.5rem;
+    position: absolute;
+    z-index: 1;
+}
+
+/*---------------footer---------------------*/
+
+footer{
+    background-image: linear-gradient(to top left,#5E548E,#9F86C0);
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    height: 12rem;
+    align-items: center;
+    grid-template-rows: auto;
+    padding: 1rem;
+    letter-spacing: 0.5px;
+    padding-left: 1rem;
+}
+.logofooter{
+    height: 7rem;
+    margin: auto;
+}
+#id2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#id2 a{
+    padding: 0.39rem;
+}
+#id3{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.botoes{
+    display:flex;
+}
+
+.botao{
+    border: none;
+    background-color:  #a6affe;
+    padding: 0.5rem 2.5rem;
+    border-radius: 2rem;
+    color: #513fd4;
+    margin:1.5rem
+}
+
+/*------------publicar--------------------------*/
+.publicar{
+    padding: 15vw;
+    padding-bottom: 2vw;
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+#formulario{
+    background-image: linear-gradient(to top left,#5E548E,#9F86C0);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+#topPub{
+    display: flex;
+    height: 2.5rem;
+    justify-content: flex-end;
+    margin-bottom: 0.5rem;
+}
+
+#topPub button,
+#topPub input{
+    margin: 0.5rem;
+    border-radius: 5px;
+    background-color: #a6affe00;
+    border: 1px solid white;
+    padding: 0.2rem;
+}
+button#res{
+    border: none;
+    text-decoration: nonec;
+    background-color: #a6affe00;
+}
+#res img{
+    width: 1rem;
+    height: 1rem;
+}
+
+#latPub{
+    display: flex;
+    justify-content: space-between;
+}
+
+#latPub nav{
+    border-left:0.1px solid antiquewhite;
+}
+#Arquivo{
+    height: auto;
+    width: auto;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+#latPub nav{
+    padding: 1rem;
+}
+#latPub nav input,
+textarea{
+    color: darksalmon;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #be95c4;
+    font-size: 1rem;
+    margin: 0.2rem;
+    margin-top: 1rem;
+    border: 1px solid antiquewhite;
+    border-radius: 5px;
+}
+#latPub nav p{
+    font-size: 1.1rem;
+    margin: 0.3rem;
+}
+
+#topo button, #topo input{
+    font-size: 15px;
+    color: white;
+}
+#topo button:hover, #topo input:hover{
+    color:#e9dff7;
+    background-color: #9F86C0;
+}
+
+#Inserirpreco input{
+    color: darksalmon;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #be95c4;
+    font-size: 1rem;
+}

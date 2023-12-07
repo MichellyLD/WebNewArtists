@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Playpen Sans', cursive;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+
+/*---------------Header---------------------*/
+header{
+    background-image: linear-gradient(to top left,#BE95C4,#5E548E);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.3rem;
+    justify-content: space-between;
+    padding-left: 1rem;
+}
+header ul{
+    display: flex;
+    list-style: none;
+}
+#opcoes a{
+    color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 50rem;
+    font-size: 1.01rem;
+}
+#opcoes a:hover {
+    background-color: #665be0;
+    color: #cac5f1;
+    transition: all .3s;
+}
+header li{
+    margin: 1rem;
+    white-space: nowrap;
+}
+#logo{
+    height: 3rem;
+    padding-right: 2rem;
+}
+
+.buscar{
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+.buscar input[type=search]{
+    width: 15rem;
+    height: 2rem;
+    border-radius: 2rem;
+    border: none;
+    padding: 0.5rem;
+}
+.buscar img{
+    background-color: #d9e9f800;
+    float: right;
+    border: none;
+    cursor: pointer;
+    width: 1.8rem;
+}
+
+
+/*--------------------Botão de login--------------------*/
+#login button{
+    border: none;
+    background-color:  #a6affe;
+    padding: 0.5rem 2.5rem;
+    border-radius: 2rem;
+    color: #513fd4;
+    margin:1.5rem;
+}
+#login button:hover {
+    background: #8876ee;
+    color: #eadbf3;
+}
+#login button:active {
+    background: #4f34e9;
+}
+
+
+
+.obra a{
+   text-decoration: none;
+   color: #281a77;
+}
+h1 {
+    text-align: center;
+    margin: 1em 0;
+    font-family: sans-serif;
+}
+ 
+ 
+/*---------------Lateral---------------------*/
+#lateral img{
+    margin-left: 0.5rem;
+    width: 2rem;
+    position: absolute;
+}
+input[type="checkbox"]{
+    display: none;
+}
+#lateral nav{
+    background-color:#cdd1f9;
+    width: 15rem;
+    left: -15rem;
+    height: 50rem;
+    position: absolute;
+    transition: all .5s;
+    opacity: 0.9;
+    border-radius: 0rem 1rem 1rem 0rem;
+}
+
+input[type="checkbox"]:checked ~ nav{
+    transform: translateX(15rem);
+}
+#lateral ul{
+    list-style: none;
+    top: 3rem;
+    position: absolute;
+    width: 100%;
+}
+#lateral a{
+    display: block;
+    padding: 2.5rem 1rem;
+    color:#513fd4;
+}
+#lateral a:hover{
+    background-color: #B3C4F2;
+    color:#1a4996;
+    transition: all .3s;
+}
+#label1{
+    padding: 0.5rem;
+    position: absolute;
+    z-index: 1;
+}
+
+/*---------------Main 1------------------------*/
+.main1{
+    width: auto;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    align-self: center;
+    margin:1rem;
+   
+}
+
+/*---------------Produtos---------------------*/
+
+#blocoo{
+    background-color: #f1e6fd;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    margin:3rem;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.destaque{
+    background-color: #f1e6fd;
+    display:flex;
+    width:100%;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius: 10px;
+}
+
+.obras{
+    display: flex;
+    align-items: center;
+    border-radius: 23px;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width:100%;
+}
+
+.obra{
+    display: grid;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 16rem;
+    height: auto;
+    border-radius: 20px;
+    margin: 1rem;
+    padding: 0.5rem;
+    background: #ffff;
+    align-items: center;
+    align-content: space-around;
+    align-self: center;
+     box-shadow:  0 0 10px 2px black;
+}
+.obra img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+#imagemObra img{
+    height: 16rem;
+}
+
+.artistasdestaques{
+    margin: 2em;
+    width:100%;
+    background-color: #f1e6fd;
+    align-items: center;
+    align-content: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius: 10px;
+}
+
+.artistas{
+    background-color: #f1e6fd;
+    display:flex;
+    width:100%;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius: 10px;
+}
+
+.artista{
+    display: flex;
+    align-items: center;
+    border-radius: 23px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:100%;
+}
+
+.art{
+    display: grid;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 16rem;
+    height: auto;
+    border-radius: 20px;
+    margin: 1rem;
+    padding: 0.5rem;
+    background: #ffff;
+    align-items: center;
+    align-content: space-around;
+    align-self: center;
+     box-shadow:  0 0 10px 2px black;
+}
+
+.art img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.main2{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin:1rem;
+}
+
+.obra2{
+    display: flex;
+    align-items: center;
+    margin-left: 20rem;
+}
+
+.foto{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    align-items: flex-end;
+}
+
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 1rem;
+    flex-direction: column;
+}
+
+.info2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.foto img{
+    height:23rem;
+    border-radius: 20px;
+}
+
+.nome{
+    display:flex;
+    align-items: space-between;
+    background-color: #D9D9D9;
+    border: 0.5rem solid #D9D9D9;
+    border-radius: 28px;
+}
+
+.autor2{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+.autor2 img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.autor2 h4{
+    margin: 2rem;
+    background-color: #D9D9D9;
+    border: 0.5rem solid #D9D9D9;
+    border-radius: 28px;
+}
+
+.botoes{
+    display: flex;
+}
+
+#botao button{
+    border: none;
+    background-color:  #a6affe;
+    padding: 0.5rem 2.5rem;
+    border-radius: 2rem;
+    color: #513fd4;
+    margin:1.5rem
+}
+#botao button:hover {
+    background: #3f2ec0;
+    color: #ccc;
+}
+#botao button:active {
+    background: #170697;
+}
+
+.sobre{
+    display:flex;
+    background-color: #D9D9D9;
+    border: 0.5rem solid #D9D9D9;
+    border-radius: 28px;
+    margin:4rem;
+    padding: 5rem;
+   
+}
+
+
+.main3{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin:1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h2{
+    margin-bottom: 1.5%;
+    margin-left: 45%;
+}
+
+.login{
+    background-color: #cfb7fa;
+    border: 1px solid papayawhip;
+    border-radius: 80px;
+    width: 24rem;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.dentro{
+   display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+   
+}
+
+.label{
+   
+    padding: 0.5rem;
+    z-index: 1;
+}
+#lateral label{
+    padding: 0.5rem;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.login button{
+    background-color: #4c2bb0;
+    color:white;
+    border-radius: 15px;
+    border: black solid 2px;
+    font-size: 1.1rem;
+    width: 9rem;
+    height: 40px;
+    margin: 15px auto;
+}
+
+/*---------------footer---------------------*/
+
+footer{
+    background-image: linear-gradient(to top left,#5E548E,#9F86C0);
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    height: 12rem;
+    align-items: center;
+    grid-template-rows: auto;
+    padding: 1rem;
+    letter-spacing: 0.5px;
+    padding-left: 1rem;
+}
+.logofooter{
+    height: 7rem;
+    margin: auto;
+}
+#id2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#id2 a{
+    padding: 0.39rem;
+}
+#id3{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.botoes{
+    display:flex;
+}
+
+.botao{
+    border: none;
+    background-color:  #a6affe;
+    padding: 0.5rem 2.5rem;
+    border-radius: 2rem;
+    color: #513fd4;
+    margin:1.5rem
+}
+
+/*-------------------------index.php--------------------*/
+
+.divtexto{
+    display: flex;
+    height: 19vh;
+    font-size: larger;
+    align-content: stretch;
+}
+
+#log{
+    display: contents;
+    font-size: large;
+}
+
+.nossosite{
+    background-image: linear-gradient(to left,#BE95C4,#5E548E);
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 1rem;
+    width: auto;
+    height: auto;
+    border-top: 0.1rem solid white;
+    align-items: center;
+}
+
+.logosite{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.texto{
+    color: rgb(246, 234, 250);
+    font-size: 180%;
+}
+
+.texto h3{
+    padding-bottom:30rem;
+}
+

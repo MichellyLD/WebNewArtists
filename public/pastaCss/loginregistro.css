@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Playpen Sans', cursive;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+
+body, html{
+  height: 100%;
+}
+
+
+/*---------------Header---------------------*/
+header{
+    background-image: linear-gradient(to top left,#BE95C4,#5E548E);
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 0.3rem;
+   
+    padding-left: 1rem;
+    height: 20%;
+   
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+}
+#opcoes a{
+    color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 50rem;
+    font-size: 1.01rem;
+}
+#opcoes a:hover {
+    background-color: #665be0;
+    color: #cac5f1;
+    transition: all .3s;
+}
+header li{
+    margin: 1rem;
+    white-space: nowrap;
+}
+#logo{
+    height: 3rem;
+    padding-right: 2rem;
+}
+
+.buscar{
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+.buscar input[type=search]{
+    width: 15rem;
+    height: 2rem;
+    border-radius: 2rem;
+    border: none;
+    padding: 0.5rem;
+}
+.buscar img{
+    background-color: #d9e9f800;
+    float: right;
+    border: none;
+    cursor: pointer;
+    width: 1.8rem;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+/*--------------------Botão de login--------------------*/
+#login button{
+    border: none;
+    background-color:  #a6affe;
+    padding: 0.5rem 2.5rem;
+    border-radius: 2rem;
+    color: #513fd4;
+    margin:1.5rem;
+}
+#login button:hover {
+    background: #8876ee;
+    color: #eadbf3;
+}
+#login button:active {
+    background: #4f34e9;
+}
+
+
+
+.obra a{
+   text-decoration: none;
+   color: #281a77;
+}
+h1 {
+    text-align: center;
+    margin: 1em 0;
+    font-family: sans-serif;
+}
+.label{
+    padding: 0.5rem;
+    z-index: 1;
+    line-height:inherit;
+}  
+ 
+/*-----------Registro----------------------*/
+
+#login button{
+    border: none;
+    background-color:  #a6affe;
+    padding: 0.5rem 2.5rem;
+    border-radius: 2rem;
+    color: #513fd4;
+    margin:1.5rem;
+}
+#login button:hover {
+    background: #8876ee;
+    color: #eadbf3;
+}
+#login button:active {
+    background: #4f34e9;
+}
+
+
+
+.obra a{
+   text-decoration: none;
+   color: #281a77;
+}
+h1 {
+    text-align: center;
+    margin: 1em 0;
+    font-family: sans-serif;
+}
+
+.label{
+    padding: 0.5rem;
+    z-index: 1;
+    line-height:inherit;
+}  
+ 
+.h3{
+    display: block;
+    font-size: 1.17em;
+    font-weight: bold;
+}
+
+ 
+/*---------------Lateral---------------------*/
+#lateral img{
+    margin-left: 0.5rem;
+    width: 2rem;
+    position: absolute;
+}
+input[type="checkbox"]{
+    display: none;
+}
+#lateral nav{
+    background-color:#cdd1f9;
+    width: 15rem;
+    left: -15rem;
+    height: 50rem;
+    position: absolute;
+    transition: all .5s;
+    opacity: 0.9;
+    border-radius: 0rem 1rem 1rem 0rem;
+}
+
+input[type="checkbox"]:checked ~ nav{
+    transform: translateX(15rem);
+}
+#lateral ul{
+    list-style: none;
+    top: 3rem;
+    position: absolute;
+    width: 100%;
+}
+#lateral a{
+    display: block;
+    padding: 2.5rem 1rem;
+    color:#513fd4;
+}
+#lateral a:hover{
+    background-color: #B3C4F2;
+    color:#1a4996;
+    transition: all .3s;
+}
+#label1{
+    padding: 0.5rem;
+    position: absolute;
+    z-index: 1;
+}
+
+
+
+/*---------------main---------------------*/
+.main1{
+    width: auto;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    align-self: center;
+    margin:1rem;
+   
+}
+
+.main3{
+    width: auto;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    align-self: center;
+    margin:1rem;
+   
+}
+
+
+h2{
+    margin-bottom: 1.5%;
+}
+
+.login{
+    background-color: #f1e6fd;
+    border: 1px solid papayawhip;
+    border-radius: 20px;
+    width: 24rem;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.dentro{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.label{
+   
+    padding: 0.5rem;
+    z-index: 1;
+}
+#lateral label{
+    padding: 0.5rem;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.login button{
+    background-color: #4c2bb0;
+    color:white;
+    border-radius: 15px;
+    border: black solid 2px;
+    font-size: 1.1rem;
+    width: 9rem;
+    height: 40px;
+    margin: 15px auto;
+}
+
+
+/*-------------------------login--------------------*/
+
+.divtexto{
+    display: flex;
+    font-size: larger;
+    align-content: stretch;
+}
+
+#log{
+    display: contents;
+    font-size: large;
+}
+
+main{
+    width: 100%;
+    height: 80%;
+}
+
+.nossosite{
+    background-image: linear-gradient(to left,#BE95C4,#5E548E);
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 1rem;
+    width: auto;
+    height: 100%;
+    border-top: 0.1rem solid white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+}
+
+
+.logosite{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.texto{
+    color: rgb(246, 234, 250);
+    font-size: 180%;
+}
+
+.texto h3{
+    padding:3rem;
+}

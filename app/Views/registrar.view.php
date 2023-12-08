@@ -10,44 +10,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <a href="index.php"><img id="logo" src="<?=img("NewArtists.png")?>"></a>
-      <a href="">Precisa de ajuda?</a>
+    <header>
+        <a href="index.php"><img id="logo" src="<?=img("NewArtists.png")?>"></a>
+        <a href="">Precisa de ajuda?</a>
     </header>
-<main>
-    <div class="nossosite">
-        <img class="logosite" src="<?=img("nA.png")?>">  
-        <div class="login">
-        <?flash();?>
-            <div class="divtexto"><h3>Informe seus dados:</h3></div>
-    <form id="log" action="<?=linkrota('cadastrarconta')?>" method="POST">
-                <div class="dentro">
-                    <label class="label">Nome:
-                        <input type="name" size="20" name="nome"  value="<?=getValue('nome')?>">
-                    </label>
+    <main>
+        <div class="nossosite">
+            <img class="logosite" src="<?=img("nA.png")?>">
+            <div class="login">
+                <?flash();?>
+                <div class="divtexto"><h3>Informe seus dados:</h3></div>
+                <form id="log" action="<?=linkrota('cadastrarconta')?>" method="POST">
+                    <div class="dentro">
+                        <label class="label">Nome:
+                            <input type="text" size="20" name="nome" value="<?=getValue('nome')?>">
+                        </label>
 
-                    <label class="label">CPF:
-                        <input type="name" size="20" name="nome"  value="<?=getValue('cpf')?>">
-                    </label>
+                        <label class="label">CPF:
+                            <input type="text" size="20" name="cpf" value="<?=getValue('cpf')?>">
+                        </label>
 
-                    <label for="telefone">Telefone
-                        <input type="tel" id="telefone" size="20"  value="<?=getValue('telefone')?>">
-                    </label>
+                        <label for="telefone">Telefone:
+                            <input type="tel" id="telefone" name="telefone" size="20" value="<?=getValue('telefone')?>">
+                        </label>
 
-                    <label class="label">Email:
-                        <input type="email" size="20" name="email"  value="<?=getValue('email')?>">
-                    </label>
+                        <label class="label">Email:
+                            <input type="email" size="20" name="email" value="<?=getValue('email')?>">
+                        </label>
 
-                    <label class="label">Senha:
-                        <input type="password" size="20" maxlength="19">
-                    </label>
-                </div>
+                        <label class="label">Senha:
+                            <input type="password" size="20" maxlength="19">
+                        </label>
+                    </div>
 
-                <div class="divbotao">
-                    <a href=""><button> Registrar </button></a>
-                </div>
+                    <div class="divbotao">
+                        <button type="submit">Registrar</button>
+                    </div>
                     <a href="login.php">Já possui uma conta? Entre agora!</a>
-    </form>
+                </form>
+            </div>
         </div>
-    </div>
-</main>
+    </main>
+</body>
+</html>

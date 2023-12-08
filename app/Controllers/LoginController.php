@@ -20,8 +20,6 @@ class LoginController extends Controller{
     
 
 
-
-
     public function criarconta()
     {
         $this->view('conta');
@@ -29,26 +27,19 @@ class LoginController extends Controller{
     
 
 
-
-
     public function cadastrarconta()
     {
-
-
-        $houveerro = Validator::execute(Usuario::getRegras(),$this->post());
-        if( $houveerro )
-        {
+        $houveerro = Validator::execute(Usuario::getRegras(), $this->post());
+        
+        if ($houveerro) {
             addFormData($this->post());
-            flash(Validator::getListaErros(),'erro');
-            redireciona('criarconta');
+            flash(Validator::getListaErros(), 'erro');
         }
-        
+
         $usuario = new Usuario($this->post());
-        
-        if( UsuariosDAO::inserir($usuario)){
-            
+
+        if (UsuariosDAO::inserir($usuario)) {
             flash("Usuário {$usuario->nome} foi cadastrado com sucesso!");
-            
             redireciona('login');
         }
     }

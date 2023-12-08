@@ -16,21 +16,19 @@ class Database{
         
         $dsn = "mysql:host={$servidor};dbname={$banco}";
         
-       $this->conexao = new \PDO($dsn,$usuario,$senha); 
+        $this->conexao = new \PDO($dsn, $usuario, $senha); 
     }
     
-    public function execute(string $sql, array $dados = []) :bool
+    public function execute(string $sql, array $dados = []): bool
     {
-       $this->stmt = $this->conexao->prepare($sql);
+        $this->stmt = $this->conexao->prepare($sql);
         
         return $this->stmt->execute($dados);
     }
     
-    public function getAll(string $classe) :array
+    public function getAll(string $classe): array
     {
-
-        return $this->stmt->fetchAll(\PDO::FETCH_CLASS,$classe);
-    
+        return $this->stmt->fetchAll(\PDO::FETCH_CLASS, $classe);
     }
     
     public function get(string $classe) 
@@ -38,4 +36,3 @@ class Database{
         return $this->stmt->fetchObject($classe);
     }
 }
-    

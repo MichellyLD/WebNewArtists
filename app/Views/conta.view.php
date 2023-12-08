@@ -21,18 +21,18 @@
         <div class="login">
 
             <div class="divtexto"><h3>Informe seus dados:</h3></div>
-            <form id="log" action="<?=linkrota('cadastrarconta')?>" method="POST">
+            <form id="log" action="<?=('cadastrarconta')?>" method="POST">
                 <div class="dentro">
                     <label class="label">Nome:
                         <input type="name" size="20" name="nome"  value="<?=getValue('nome')?>">
                     </label>
 
                     <label class="label">CPF:
-                        <input type="name" size="20" name="nome"  value="<?=getValue('cpf')?>">
+                        <input type="cpf" size="20" name="cpf"  value="<?=getValue('cpf')?>">
                     </label>
 
                     <label for="telefone">Telefone
-                        <input type="tel" id="telefone" size="20"  value="<?=getValue('telefone')?>">
+                        <input type="telefone" id="telefone" size="20" name="telefone"  value="<?=getValue('telefone')?>">
                     </label>
 
                     <label class="label">Email:
@@ -40,7 +40,7 @@
                     </label>
 
                     <label class="label">Senha:
-                        <input type="password" size="20" maxlength="19">
+                        <input type="password" size="20" maxlength="19" value="<?=getValue('senha')?>">
                     </label>
                 </div>
 

@@ -14,22 +14,25 @@ abstract class Entity{
         foreach( array_keys($propriedades) as $propriedade )
         {
         if( array_key_exists($propriedade,$dados))
-            {
-                $metodo = "set".ucfirst($propriedade);
-         if(method_exists($this,$metodo))
-                {
-                    $this->$metodo($dados[$propriedade]);
-                }else{
-                    $this->$propriedade = $dados[$propriedade];
-                }
-                
-            }else{
-                if(!isset($this->$propriedade)){
-                    $this->$propriedade = NULL;
-                }
+        $valor = $dados[$propriedade];
+            
+        if ($valor !== null && (!is_numeric($valor) || $valor !== 0)) {
+            $metodo = "set" . ucfirst($propriedade);
+
+            if (method_exists($this, $metodo)) {
+                $this->$metodo($valor);
+            } else {
+                $this->$propriedade = $valor;
             }
         }
     }
+        if (!isset($this->$propriedade)) {
+            $this->$propriedade = null;
+        }
+    }
+        
+    
+    
     
     public function __set($nomeProp,$valor)
     {

@@ -38,4 +38,6 @@ class ObraController extends Controller{
         $dados = ['titulo' => 'Compras'];
         $this->view('compras',$dados);
     }
+
+    
 }
